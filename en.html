@@ -33,46 +33,32 @@
         Survive. Fight. Reach the exit.
     </div>
 
-    <div class="objective">
+    <div class="box objective">
         You are the green player. Move along the LED strip from the start to the blue exit.
         Defeat or avoid the red enemies. You have 3 lives per level.
     </div>
 
     <h2>controls</h2>
 
-    <div class="control-box">
-        <div class="controller">
-            <div class="btn-circle btn-up active"></div>
-            <div class="btn-circle btn-fire"></div>
-            <div class="btn-circle btn-down"></div>
-        </div>
-        <div class="control-text">
-            <div class="control-label">UP</div>
-            <div class="control-desc">move toward the exit</div>
-        </div>
+    <div class="controller-container">
+        <img src="images/motwang_controller_light.svg" alt="MO_TWANG Controller" class="controller-image">
     </div>
 
-    <div class="control-box">
-        <div class="controller">
-            <div class="btn-circle btn-up"></div>
-            <div class="btn-circle btn-fire"></div>
-            <div class="btn-circle btn-down active"></div>
+    <div class="controller-legend">
+        <div class="legend-item">
+            <img src="images/up.svg" alt="UP" class="legend-icon">
+            <span class="legend-label">UP</span>
+            <span class="legend-desc">move toward the exit</span>
         </div>
-        <div class="control-text">
-            <div class="control-label">DOWN</div>
-            <div class="control-desc">move toward the start</div>
+        <div class="legend-item">
+            <img src="images/down.svg" alt="DOWN" class="legend-icon">
+            <span class="legend-label">DOWN</span>
+            <span class="legend-desc">move toward the start</span>
         </div>
-    </div>
-
-    <div class="control-box">
-        <div class="controller">
-            <div class="btn-circle btn-up"></div>
-            <div class="btn-circle btn-fire active"></div>
-            <div class="btn-circle btn-down"></div>
-        </div>
-        <div class="control-text">
-            <div class="control-label">FIRE</div>
-            <div class="control-desc">attack enemies</div>
+        <div class="legend-item">
+            <img src="images/fire.svg" alt="FIRE" class="legend-icon">
+            <span class="legend-label">FIRE</span>
+            <span class="legend-desc">attack enemies</span>
         </div>
     </div>
 
@@ -120,7 +106,7 @@
 
     <h2>strategy</h2>
 
-    <div class="strategy-box">
+    <div class="box strategy-box">
         <div class="strategy-title">ESSENTIAL TIPS</div>
         <ul>
             <li>stop to attack, then resume moving</li>
