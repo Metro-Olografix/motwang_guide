@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MO_TWANG - Redirecting...</title>
+    <script>
+        // Detect user's browser language and redirect accordingly
+        (function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var lang = userLang.toLowerCase().split('-')[0]; // Get primary language code
+
+            // Map language to available pages
+            var availableLanguages = {
+                'it': 'it.html',
+                'en': 'en.html',
+                'es': 'es.html'
+            };
+
+            // Redirect to user's language if available, otherwise default to English
+            var targetPage = availableLanguages[lang] || 'en.html';
+            window.location.replace(targetPage);
+        })();
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=en.html">
+    </noscript>
+</head>
+<body>
+    <p>Redirecting to your language... <a href="en.html">English</a> | <a href="it.html">Italian</a> | <a href="es.html">Spanish</a></p>
+</body>
+</html>

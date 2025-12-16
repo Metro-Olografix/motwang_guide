@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Header styles matching olografix.org exactly */
+header {
+    width: 100%;
+}
+
+.header-bar {
+    width: 100%;
+    background: #000;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1280px; /* max-w-5xl */
+    margin: 0 auto;
+    padding: 1rem 1rem; /* py-4 px-4 from olografix mobile nav */
+}
+
+.header-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 2rem; /* h-8 = 32px */
+}
+
+.logo-link {
+    height: 2rem; /* h-8 = 32px */
+    display: flex;
+    align-items: center;
+    padding: 0; /* No extra padding on mobile */
+    flex-shrink: 0;
+}
+
+.logo-link img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    max-width: none;
+}
+
+.lang-switcher {
+    display: flex;
+    gap: 1rem; /* space-x-4 */
+    justify-content: flex-end;
+}
+
+.lang-switcher a {
+    color: #fff;
+    text-decoration: none !important; /* Override global link style */
+    transition: color 0.3s;
+    font-size: 1.25rem; /* text-xl = 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.lang-switcher a:hover {
+    color: #9ca3af; /* hover:text-gray-400 */
+}
+
+/* Content area */
+.content {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 60px 30px 40px;
+}
+
+h1.title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin: 50px 0 30px 0; /* increased bottom margin from 20px to 30px */
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #000;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 28px;
+    line-height: 1.7;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+
+.objective {
+    text-align: center;
+    margin-bottom: 38px;
+    padding: 20px 24px;
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.control-box {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.controller {
+    width: 95px;
+    height: 60px;
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.btn-circle {
+    width: 15px;
+    height: 15px;
+    border: 1.5px solid #000;
+    border-radius: 50%;
+}
+
+.btn-circle.active {
+    background: #000;
+}
+
+.btn-up {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.btn-down {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.btn-fire {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.control-text {
+    flex: 1;
+}
+
+.control-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+}
+
+.control-desc {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.key-mechanic {
+    text-align: center;
+    margin: 38px auto;
+    padding: 20px 26px;
+    border: 2px dashed #000;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.key-mechanic-title {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.key-mechanic-text {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.color-box-container {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.color-swatch {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    flex-shrink: 0;
+}
+
+.color-info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.color-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.color-desc {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.strategy-box {
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    padding: 22px;
+    margin: 32px 0;
+}
+
+.strategy-title {
+    font-weight: 600;
+    margin-bottom: 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.strategy-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.strategy-box li {
+    margin-bottom: 12px;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.strategy-box li:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 22px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+footer a {
+    color: #000;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .header-container {
+        padding: 1.75rem 0; /* md:py-7 px-0 on desktop */
+    }
+
+    .header-container > div {
+        height: 2.5rem; /* md:h-10 = 40px */
+    }
+
+    .logo-link {
+        height: 2.5rem; /* md:h-10 = 40px */
+        padding: 0 1rem 0 0; /* px-4 sm:px-0 -> no left padding on desktop, small right */
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        padding: 40px 20px 30px;
+    }
+
+    h1.title {
+        font-size: 48px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .key-mechanic {
+        max-width: 100%;
+    }
+
+    .controller {
+        width: 85px;
+        height: 54px;
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .btn-circle {
+        width: 13px;
+        height: 13px;
+    }
+}
