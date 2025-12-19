@@ -1,9 +1,9 @@
 :root {
-    --radius: 8px;
+    --radius: 16px;
     --radius-full: 50%;
 
-    --white: #d1d1d1;
-    --dark: #4d4d4d;
+    --white: #ffffff;
+    --dark: #000000;
 }
 
 * {
@@ -37,6 +37,7 @@ header {
 .header-bar {
     width: 100%;
     background: var(--dark);
+    padding-right: 1rem; /* Account for scrollbar */
 }
 
 .header-container {
@@ -95,10 +96,10 @@ header {
 }
 
 h1.title {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 64px;
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: 0;
     margin-bottom: 28px;
     text-align: center;
 }
@@ -115,6 +116,7 @@ h2 {
 }
 
 .intro {
+    font-family: 'IBM Plex Mono', monospace;
     text-align: center;
     margin-bottom: 28px;
     line-height: 1.7;
@@ -146,7 +148,7 @@ h2 {
 }
 
 .controller-image {
-    max-width: 80%;
+    max-width: 70%;
     width: 100%;
     height: auto;
 }
@@ -198,6 +200,7 @@ h2 {
 }
 
 .key-mechanic-title {
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 2px;
@@ -233,6 +236,7 @@ h2 {
 }
 
 .color-name {
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
     margin-bottom: 4px;
     font-size: 13px;
@@ -250,6 +254,7 @@ h2 {
 }
 
 .strategy-title {
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
     margin-bottom: 18px;
     font-size: 12px;
@@ -327,6 +332,6 @@ footer a:hover {
     }
 
     .controller-image {
-        max-width: 90%;
+        max-width: 70%;
     }
 }
